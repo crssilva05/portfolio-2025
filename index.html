@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Silva | Biomedical Instrumentation & AI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ai-elements.css">
+    <link rel="stylesheet" href="css/skills-fix.css">
+    <link rel="stylesheet" href="css/enhancements.css">
+    <link rel="stylesheet" href="css/remove-branding.css">
+    <link rel="stylesheet" href="css/new-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Rajdhani:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Matrix Rain Background -->
+    <div class="matrix-container" id="matrix-container"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="logo">
+            <span class="logo-text">CS</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <button id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="language-selector">
+                <button id="language-toggle" aria-label="Change language">
+                    <span>EN</span>
+                </button>
+                <div class="language-dropdown">
+                    <a href="#" data-lang="en">English</a>
+                    <a href="#" data-lang="pt">Português</a>
+                    <a href="#" data-lang="fr">Français</a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="glitch-container">
+                    <h1 class="glitch-text" data-text="Cristiano Silva">Cristiano Silva</h1>
+                </div>
+                <div class="typing-container">
+                    <span class="static-text">I'm a </span>
+                    <span class="typing"></span>
+                </div>
+                <p class="hero-description">Specializing in Biomedical Instrumentation with expertise in AI and medical technologies</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="primary-btn">Get in Touch</a>
+                    <a href="#projects" class="secondary-btn">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <div class="profile-hexagon">
+                        <div class="profile-image"></div>
+                    </div>
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <h2>About <span class="highlight">Me</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Specialist in Biomedical Instrumentation with experience in medical technologies and artificial intelligence. Skilled in maintenance, calibration, and optimization of biomedical equipment, ensuring quality standards.</p>
+                <p>Expertise in intelligent systems programming and application of machine learning in healthcare. Focused on failure analysis, technical support, and continuous improvement, contributing to efficiency in clinical and hospital environments.</p>
+                <p>Committed to technological evolution in the IT and biomedical sectors, with a passion for developing innovative solutions that bridge the gap between healthcare and technology.</p>
+                <div class="about-details">
+                    <div class="detail-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>silvacristiano0508@gmail.com</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Biomedical Engineering - Instituto Superior de Engenharia de Coimbra</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-language"></i>
+                        <span>Portuguese (Native), English (Fluent), French (Basic)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="hologram">
+                    <div class="hologram-content">
+                        <div class="hologram-circle"></div>
+                        <div class="hologram-circle"></div>
+                        <div class="hologram-circle"></div>
+                        <div class="neural-network" id="neural-network"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <h2>Technical <span class="highlight">Skills</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-categories">
+            <div class="future-tabs">
+                <button class="future-tab active" data-category="programming">Programming</button>
+                <button class="future-tab" data-category="data-ai">Data & AI</button>
+                <button class="future-tab" data-category="healthcare">Healthcare Tech</button>
+                <button class="future-tab" data-category="infrastructure">Infrastructure</button>
+            </div>
+            <div class="skills-display">
+                <div class="hex-grid active" id="programming-skills">
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fab fa-react"></i>
+                            <h3>Next.js</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fab fa-html5"></i>
+                            <h3>HTML</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fab fa-css3-alt"></i>
+                            <h3>CSS</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fab fa-js"></i>
+                            <h3>JavaScript</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fab fa-python"></i>
+                            <h3>Python</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fab fa-flutter"></i>
+                            <h3>Flutter</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="hex-grid" id="data-ai-skills">
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fas fa-brain"></i>
+                            <h3>Machine Learning</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fas fa-heartbeat"></i>
+                            <h3>Biosignals</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Data Analysis</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fas fa-calculator"></i>
+                            <h3>MatLab</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="hex-grid" id="healthcare-skills">
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fas fa-stethoscope"></i>
+                            <h3>Biomedical Instrumentation</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fas fa-microscope"></i>
+                            <h3>Medical Devices</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Equipment Maintenance</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fas fa-hospital"></i>
+                            <h3>Hospital Networks</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="hex-grid" id="infrastructure-skills">
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fas fa-database"></i>
+                            <h3>Oracle SQL</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fab fa-docker"></i>
+                            <h3>Docker</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fas fa-cloud"></i>
+                            <h3>Spring Cloud</h3>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-content">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>Network Architecture</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="section-header">
+            <h2>Professional <span class="highlight">Experience</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Current</div>
+                    <div class="timeline-content">
+                        <div class="future-card">
+                            <div class="card-header">
+                                <h3>Grupo Electromédica</h3>
+                                <h4>Biomedical Instrumentation Technician & Sales Assistant</h4>
+                            </div>
+                            <p>Installation, configuration, and programming of biomedical equipment, testing and calibration, diagnosing problems, and performing preventive and corrective maintenance.</p>
+                            <p>Development of biomedical equipment documentation, preparation of technical specifications, commercial solution budgets, and customer technical assistance, as well as preparation of reports and technical documentation.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Medical Devices</span>
+                                <span class="tech-tag">Calibration</span>
+                                <span class="tech-tag">Technical Support</span>
+                                <span class="tech-tag">Documentation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date"></div>
+                    <div class="timeline-content">
+                        <div class="future-card">
+                            <div class="card-header">
+                                <h3>SAFE AI [4U]</h3>
+                                <h4>AI/Machine Learning</h4>
+                            </div>
+                            <p>Selection and analysis of public datasets, creation of synthetic data, development of rPPG models, implementation of functions in Google Cloud Functions for Front-End, and testing in demonstration applications.</p>
+                            <p>Experience with: Biosignals, Facial recognition, Dataset selection, and Data ethics.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Cloud Functions</span>
+                                <span class="tech-tag">Biosignals</span>
+                                <span class="tech-tag">Data Ethics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date"></div>
+                    <div class="timeline-content">
+                        <div class="future-card">
+                            <div class="card-header">
+                                <h3>Instituto Superior de Engenharia de Coimbra</h3>
+                                <h4>Biomedical Instrumentation</h4>
+                            </div>
+                            <p>Training in bioinstrumentation, signal processing, biomedical electronics, biomechanics, and hospital system integration, focusing on physiological monitoring, medical image analysis, and medical devices.</p>
+                            <p>Measurement and processing of biomedical signals (ECG, EEG, MRI, CT). Development of electronic circuits and IoT systems for medical applications.</p>
+                            <p>Projects involving prostheses, orthoses, and interaction of biomaterials with the human body.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Signal Processing</span>
+                                <span class="tech-tag">Medical Imaging</span>
+                                <span class="tech-tag">IoT</span>
+                                <span class="tech-tag">Biomaterials</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2>Featured <span class="highlight">Projects</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-front">
+                        <div class="project-image" style="background-color: #c42b21; background-image: linear-gradient(45deg, rgba(255, 77, 77, 0.2), rgba(255, 255, 255, 0.1))">
+                            <div style="display: flex; justify-content: center; align-items: center; height: 100%">
+                                <i class="fas fa-tint" style="font-size: 3rem; color: white;"></i>
+                            </div>
+                        </div>
+                        <h3>Doar Vida Cabo Verde</h3>
+                        <p>Blood donation platform for Cape Verde hospitals</p>
+                    </div>
+                    <div class="project-back">
+                        <h3>Doar Vida Cabo Verde</h3>
+                        <p>A comprehensive blood donation management platform for Cape Verde hospitals that tracks blood bank inventory levels, connects donors with hospitals, and displays urgent donation needs.</p>
+                        <div class="tech-stack">
+                            <span>Next.js</span>
+                            <span>Healthcare</span>
+                            <span>Real-time Monitoring</span>
+                            <span>Geolocation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://bscv.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-front">
+                        <div class="project-image" style="background-color: #00843d; background-image: linear-gradient(45deg, rgba(0, 132, 61, 0.2), rgba(100, 255, 218, 0.1))">
+                            <div style="display: flex; justify-content: center; align-items: center; height: 100%">
+                                <i class="fas fa-leaf" style="font-size: 3rem; color: white;"></i>
+                            </div>
+                        </div>
+                        <h3>Planet ReLeaf</h3>
+                        <p>Carbon offset platform focused on reforestation in Portugal</p>
+                    </div>
+                    <div class="project-back">
+                        <h3>Planet ReLeaf</h3>
+                        <p>An environmental platform that enables companies to purchase carbon credits through reforestation projects in Portugal, with real-time metrics showing CO₂ offset, trees planted, and restored hectares.</p>
+                        <div class="tech-stack">
+                            <span>Next.js</span>
+                            <span>Sustainability</span>
+                            <span>Data Visualization</span>
+                            <span>Environmental Impact</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://planet-releaf.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-front">
+                        <div class="project-image" style="background-color: #0a1021; background-image: linear-gradient(45deg, rgba(100, 255, 218, 0.1), rgba(0, 191, 255, 0.1))">
+                            <div class="data-viz">
+                                <div class="data-bar"></div>
+                                <div class="data-bar"></div>
+                                <div class="data-bar"></div>
+                                <div class="data-bar"></div>
+                                <div class="data-bar"></div>
+                                <div class="data-bar"></div>
+                                <div class="data-bar"></div>
+                                <div class="data-bar"></div>
+                                <div class="data-bar"></div>
+                            </div>
+                        </div>
+                        <h3>Biosignal Processing System</h3>
+                        <p>Python-based system for analyzing and processing physiological signals</p>
+                    </div>
+                    <div class="project-back">
+                        <h3>Biosignal Processing System</h3>
+                        <p>A comprehensive system for the acquisition, processing, and analysis of various biosignals including ECG, EEG, and EMG. Implemented using Python with specialized signal processing libraries.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Signal Processing</span>
+                            <span>Machine Learning</span>
+                            <span>Data Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-front">
+                        <div class="project-image" style="background-color: #0a1021; background-image: linear-gradient(45deg, rgba(121, 40, 202, 0.1), rgba(0, 191, 255, 0.1))">
+                            <div class="circuit-bg" style="height: 100%"></div>
+                        </div>
+                        <h3>Medical Device Integration Platform</h3>
+                        <p>System for integrating various medical devices into hospital networks</p>
+                    </div>
+                    <div class="project-back">
+                        <h3>Medical Device Integration Platform</h3>
+                        <p>A platform designed to facilitate the integration of diverse medical devices into hospital networks, ensuring seamless data flow and interoperability between different systems.</p>
+                        <div class="tech-stack">
+                            <span>Next.js</span>
+                            <span>IoT</span>
+                            <span>Network Architecture</span>
+                            <span>Data Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-front">
+                        <div class="project-image" style="background-color: #0a1021; background-image: linear-gradient(45deg, rgba(100, 255, 218, 0.1), rgba(121, 40, 202, 0.1))">
+                            <div class="hologram" style="height: 100%; background-color: transparent">
+                                <div class="hologram-content">
+                                    <div class="hologram-circle"></div>
+                                    <div class="hologram-circle"></div>
+                                    <div class="hologram-circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>AI-Powered Health Monitoring</h3>
+                        <p>Machine learning system for predictive health monitoring</p>
+                    </div>
+                    <div class="project-back">
+                        <h3>AI-Powered Health Monitoring</h3>
+                        <p>An advanced health monitoring system that utilizes machine learning algorithms to predict potential health issues based on biosignal patterns and patient data.</p>
+                        <div class="tech-stack">
+                            <span>Machine Learning</span>
+                            <span>Python</span>
+                            <span>Cloud Computing</span>
+                            <span>Real-time Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-front">
+                        <div class="project-image" style="background-color: #0a1021; background-image: linear-gradient(45deg, rgba(255, 77, 77, 0.1), rgba(0, 191, 255, 0.1))">
+                            <div style="display: flex; justify-content: center; align-items: center; height: 100%">
+                                <div class="future-loader">
+                                    <div class="loader-circle"></div>
+                                    <div class="loader-circle"></div>
+                                    <div class="loader-circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Mobile Health Application</h3>
+                        <p>Flutter-based mobile application for patient monitoring</p>
+                    </div>
+                    <div class="project-back">
+                        <h3>Mobile Health Application</h3>
+                        <p>A cross-platform mobile application developed with Flutter that enables remote patient monitoring, data collection, and health status visualization for both patients and healthcare providers.</p>
+                        <div class="tech-stack">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Mobile Development</span>
+                            <span>Healthcare API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="section-header">
+            <h2>Education & <span class="highlight">Certifications</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="education-container">
+            <div class="glow-border">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Licenciatura em Engenharia Biomédica</h3>
+                        <h4>Instituto Superior de Engenharia de Coimbra</h4>
+                        <p>Biomedical Engineering Degree with focus on bioinstrumentation, signal processing, biomedical electronics, biomechanics, and hospital system integration.</p>
+                        <p>Specialized in physiological monitoring, medical image analysis, and medical devices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="neon-line"></div>
+            <div class="glow-border">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Curso Técnico de Instrumentação Biomédica</h3>
+                        <h4>Technical Course in Biomedical Instrumentation</h4>
+                        <p>Specialized training in biomedical instrumentation, focusing on installation, configuration, and maintenance of medical equipment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2>Get in <span class="highlight">Touch</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>Interested in collaborating on innovative biomedical or AI projects? Have questions about my work? Feel free to reach out!</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>silvacristiano0508@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Coimbra, Portugal</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <div class="form-field">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                            <div class="field-glow"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <div class="field-glow"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="field-glow"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Message</label>
+                            <div class="field-glow"></div>
+                        </div>
+                    </div>
+                    <button type="submit" class="future-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">CS</span>
+                <p>Cristiano Silva</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cristiano Silva. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Assistant Button -->
+    <div class="ai-assistant">
+        <button class="ai-button">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div class="ai-chat-container">
+            <div class="ai-chat-header">
+                <h3>AI Assistant</h3>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="ai-chat-messages">
+                <div class="ai-message">
+                    <div class="ai-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hello! I'm Cristiano's AI assistant. How can I help you navigate the portfolio?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-chat-input">
+                <input type="text" placeholder="Type your question...">
+                <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="progress-bar">
+        <div class="progress-indicator"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+    <script>
+        // Matrix Rain Effect
+        function createMatrixRain() {
+            const container = document.getElementById('matrix-container');
+            const width = window.innerWidth;
+            const columns = Math.floor(width / 20);
+            
+            for (let i = 0; i < columns; i++) {
+                const rain = document.createElement('div');
+                rain.className = 'matrix-rain';
+                rain.style.left = i * 20 + 'px';
+                rain.style.animationDuration = Math.random() * 3 + 2 + 's';
+                rain.style.animationDelay = Math.random() * 2 + 's';
+                
+                let text = '';
+                const length = Math.floor(Math.random() * 25) + 5;
+                for (let j = 0; j < length; j++) {
+                    // Use a mix of numbers, letters, and symbols for the matrix effect
+                    const charCode = Math.random() > 0.5 
+                        ? Math.floor(Math.random() * 10) + 48 // Numbers
+                        : Math.floor(Math.random() * 26) + 65; // Letters
+                    text += String.fromCharCode(charCode);
+                }
+                
+                rain.textContent = text;
+                container.appendChild(rain);
+            }
+        }
+        
+        // Initialize matrix rain on load
+        window.addEventListener('load', createMatrixRain);
+        
+        // Update matrix rain on resize
+        window.addEventListener('resize', () => {
+            const container = document.getElementById('matrix-container');
+            container.innerHTML = '';
+            createMatrixRain();
+        });
+    </script>
+</body>
+</html>
